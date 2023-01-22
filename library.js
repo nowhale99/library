@@ -1,18 +1,21 @@
 let myLibrary = []
 
-function Book(title, author, pages, read, bookId) {
+class Book {
+    constructor(title, author, pages, read, bookId){
     this.title = title
     this.author = author
     this.pages = pages
     this.read = read
     this.bookId = bookId
+    }
 }
 
 function showBooks() {
     
     myLibrary.forEach(book => {
        const newBook =  document.createElement('div')
-       newBook.style = 'height: 500px; width: 300px; border: 1px solid gray; border-radius: 20px; display: flex; flex-direction: column; justify-content: space-around; align-items: center'
+       newBook.classList.add('newBook')
+       newBook.style = ''
        document.querySelector('.library').appendChild(newBook)
 
        const title = document.createElement('div')
@@ -71,5 +74,5 @@ function addBook() {
 document.querySelector('.addBookBtn').addEventListener('click', ()=>addBook())
 
 
-// HA I Have Add a Comment Here!
+// Feel the power of classsssssssssssssss
 

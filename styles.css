@@ -1,6 +1,18 @@
 .library {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px;
+}
+.newBook{
+    height: 500px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .addBookBtn {
@@ -24,12 +36,19 @@
     border: none;
     border-radius: 30px;
     padding: 15px 40%;
+    cursor: pointer;
 }
-
+.delBtn:hover{
+    opacity: 0.8;
+}
 .changeBtn {
     background-color: green;
     color: white;
     border: none;
     border-radius: 30px;
     padding: 15px 35%;
+    cursor: pointer;
+}
+.changeBtn:hover{
+    opacity: 0.8;
 }
