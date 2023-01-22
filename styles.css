@@ -1,0 +1,35 @@
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.addBookBtn {
+    font-size: 100px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: skyblue;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.addBookBtn:hover{
+    background-color: black;
+    color: skyblue;
+}
+
+.delBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40%;
+}
+
+.changeBtn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 35%;
+}
