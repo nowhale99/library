@@ -1,54 +1,47 @@
-.library {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 20px;
-}
-.newBook{
-    height: 500px;
-    width: 300px;
-    border: 1px solid gray;
-    border-radius: 20px;
+body{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100vw;
+    
 }
-
-.addBookBtn {
-    font-size: 100px;
-    margin: 0 auto;
-    width: 100%;
-    background-color: skyblue;
-    border: none;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: all 0.3s;
+.library-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
-.addBookBtn:hover{
-    background-color: black;
-    color: skyblue;
+.lib-header{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 10% 0;
+    background-color: rgb(255, 120, 67);
+    border: 3px solid black;
+    border-bottom: none;
+    gap: 10px;
 }
-
-.delBtn {
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 40%;
-    cursor: pointer;
+.lib-header>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.delBtn:hover{
-    opacity: 0.8;
+.book-prop{
+    padding: 10% 0;
+    background-color: lightsalmon;
 }
-.changeBtn {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 35%;
-    cursor: pointer;
+.book-prop~.read{
+    background-color: lightgreen;
 }
-.changeBtn:hover{
-    opacity: 0.8;
+.books{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    border: 3px solid black;
+    border-top: none;
+}
+.books>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
